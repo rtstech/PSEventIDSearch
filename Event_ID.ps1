@@ -54,7 +54,7 @@ if ($LogName -eq "Not Sure")
     Get-WinEvent -ListLog * | foreach { get-winevent @{logname=$_.logname; starttime=$Date } -ea 0 } | where id -eq $Input_EventID
     
     }
-##--For any other selection--##   
+##--For any other selection --##   
 else 
     {
     
